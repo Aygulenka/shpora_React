@@ -1,0 +1,57 @@
+.text {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 18px;
+    color: #E0FFFF
+  }
+  
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    color: black
+  }
+  
+  .table-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .table-container .Primer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-container .Primer span {
+    background-color: #d3d3d3;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .table-container .text {
+    width: 100%;
+  }
+  
+  .table-container pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .table-container code {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+  }
+  
+  .centre {
+    text-align: center;
+  }

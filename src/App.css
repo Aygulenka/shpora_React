@@ -1,0 +1,76 @@
+body {
+  background-image: url("3949083.webp");
+  ;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #eee;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #282936;
+}
+
+.home-link {
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 70px;
+  color: #E0FFFF;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+
+.menu a {
+  margin-bottom: 5px;
+  max-height: 40px;
+}
+
+
+.content {
+  padding: 20px;
+  margin-left: 230px;
+  margin-top: 60px;
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 90%;
+}
+
+.general {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  color: #E0FFFF;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHome {
+  padding: 20px;
+  margin-left: 20%;
+  margin-top: 60px;
+}

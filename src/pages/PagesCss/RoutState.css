@@ -1,0 +1,15 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .round-button {
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  .count-display {
+    margin: 0 10px;
+  }

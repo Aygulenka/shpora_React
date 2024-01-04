@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 60px;
+    /* Установите размер логотипа по вашему выбору */
+    height: auto;
+    animation: spin 5s linear infinite;
+    /* Анимация кручения */
+    margin-right: 20px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

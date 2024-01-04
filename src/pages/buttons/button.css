@@ -1,0 +1,148 @@
+.button {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    display: inline-block;
+  }
+  
+  .menu a {
+    margin-bottom: 5px;
+    /* Уменьшенный интервал между кнопками */
+  }
+  
+  .learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #282936;
+    /* Увеличенная толщина рамки */
+    border-radius: 2rem;
+    /* Увеличенный радиус закругления рамки */
+    overflow: hidden;
+    /* Обрезаем содержимое, чтобы не выходило за границы рамки */
+    margin-right: 5px;
+    /* Уменьшенное расстояние между кнопками */
+    width: 12rem;
+    /* Уменьшенная ширина кнопки */
+    height: 2rem;
+    /* Уменьшенная высота кнопки */
+  }
+  
+  .learn-more .background-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #282936;
+    /* or var(--black) if you prefer using variables */
+    border-radius: 2rem;
+    /* Увеличенный радиус закругления квадратика */
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    /* Анимация для всех свойств */
+    width: 0;
+    /* Изначальная ширина квадратика */
+    opacity: 0;
+    /* Изначально квадратик невидим */
+  }
+  
+  .learn-more .circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 20%;
+    /* Изначальная ширина кружочка равна 100% от родительского элемента (кнопки) */
+    height: 100%;
+    /* Высота кружочка равна 100% от родительского элемента (кнопки) */
+    background: #282936;
+    /* or var(--black) if you prefer using variables */
+    border-radius: 2rem;
+    /* Увеличенный радиус закругления кружочка */
+    overflow: hidden;
+    /* Обрезаем содержимое, чтобы не выходило за границы кружочка */
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    /* Анимация для всех свойств */
+  }
+  
+  .learn-more .circle .icon {
+    position: absolute;
+    background: #fff;
+    /* or var(--white) */
+  }
+  
+  .learn-more .circle .icon .arrow {
+    left: 0.5rem;
+    /* Смещение стрелочки */
+    width: 0.75rem;
+    /* Уменьшенная ширина стрелочки */
+    height: 0.125rem;
+    background: none;
+  
+    &::before {
+      position: absolute;
+      content: '';
+      top: -0.125rem;
+      /* Смещение стрелочки */
+      right: 0.03125rem;
+      /* Смещение стрелочки */
+      width: 0.375rem;
+      /* Уменьшенная ширина стрелочки */
+      height: 0.375rem;
+      /* Уменьшенная высота стрелочки */
+      border-top: 0.125rem solid #fff;
+      border-right: 0.125rem solid #fff;
+      transform: rotate(45deg);
+    }
+  }
+  
+  .learn-more .button-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.25rem 0;
+    /* Уменьшенный отступ текста */
+    margin: 0 0 0 2rem;
+    /* Смещение текста относительно кружочка */
+    color: #282936;
+    /* or var(--black) */
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    /* Помещаем текст над кружочком */
+  }
+  
+  .learn-more:hover .background-square {
+    width: 100%;
+    /* При наведении увеличиваем ширину до 100% */
+    opacity: 1;
+    /* При наведении делаем квадратик видимым */
+  }
+  
+  .learn-more:hover .circle {
+    width: 100%;
+  
+    /* При наведении увеличиваем ширину до 100% */
+    .icon {
+      .arrow {
+        background: #fff;
+        /* or var(--white) */
+        transform: translate(0.5rem, 0);
+        /* Смещение стрелочки при наведении */
+      }
+    }
+  }
+  
+  .learn-more:hover .button-text {
+    color: #E0FFFF;
+    ;
+    /* or var(--white) */
+  }

@@ -1,0 +1,62 @@
+/* layout.css */
+@media screen and (max-width: 767px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #menu-trigger-button {
+      margin-left: 10px;
+      cursor: pointer;
+      display: block;
+      /* Display the menu trigger button */
+    }
+  
+    .home-link {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .general {
+      margin: 10px 0;
+    }
+  
+    .menu {
+      display: none;
+      /* Hide menu by default */
+    }
+  
+    .menu-open {
+      display: flex;
+      /* Show menu when menuOpen state is true */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content,
+    .contentHome {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    #menu-trigger-button {
+      display: none;
+      /* Hide the menu trigger button on larger screens */
+    }
+  
+    .menu {
+      display: flex;
+      /* Display menu on larger screens */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content {
+      padding: 20px;
+      margin-left: 230px;
+      margin-top: 60px;
+      overflow-y: scroll;
+    }
+  }
